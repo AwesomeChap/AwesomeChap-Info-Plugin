@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jatin Kumar</title>
+  <link href="https://fonts.googleapis.com/css?family=Krub" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+  <style>
+
+    html,body{
+      font-family: 'Krub', sans-serif;
+      font-size: 14px;
+      margin: 0;
+      /* margin:6px; */
+      min-height: 180px;
+      padding:0;
+      width:304px;
+    }
+
+    .modal-header{
+      margin:6px 3px 3px 3px !important;
+      /* background: red; */
+      font-size: 20px;
+      font-weight: 800;
+      display: flex;
+      color:#666;
+      justify-content: center;
+      align-items: center;
+      width:100%;
+    }
+
+    .modal-header div{
+      margin:5px;
+    }
+
+    .logo{
+      width:30px;
+      height: 30px;
+      background-color: black;
+      border-radius: 5px;
+      text-transform: uppercase;
+      color:white;
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      overflow: hidden;
+      /* font-size:20px;
+      font-weight: 600; */
+    }
+
+    .logo::after{
+      content:'';
+      width:30px;
+      height: 30px;
+      position: absolute;
+      border-radius: 5px;
+      /* border:1px solid black; */
+      transform:translate(-70%,70%);
+      animation: glare 8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s infinite;
+      background-image: linear-gradient(to bottom left,rgba(0,0,0,0),rgba(0,0,0,0), rgba(255, 255, 255, 0.521),rgba(0,0,0,0), rgba(0,0,0,0));
+    }
+
+    @keyframes glare{
+      50%{
+        transform:translate(70%,-70%);
+      }
+      100%{
+        transform:translate(70%,-70%);
+      }
+    }
+    
+    .modal-content{
+      margin:3px;
+      display:flex;
+      /* margin-top:10px; */
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-icons{
+      /* background-color:#000; */
+      background-image: linear-gradient(#333, #000, #333);
+      border-radius: 50px;
+      height: 60px;
+      margin: 0 auto;
+      width:95%;
+      display:flex;
+      justify-content: space-evenly;
+      align-items: center;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .modal-text{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      padding: 0 10px;
+      /* background: red; */
+      background-image: linear-gradient(rgb(255, 44, 44),rgb(219, 0, 0),rgb(255, 44, 44));
+      border-radius: 20px;
+      color:white;
+      margin:10px;
+    }
+
+    .icon{
+      width:100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .icon:hover{
+      background-color:#222;
+    }
+
+    .ic{
+     font-size: 30px;
+     color:white;
+    }
+
+    .icon:hover .i1{
+      color:red;
+    }
+
+    .icon:hover .i2{
+      color:red;
+    }
+
+    .icon:hover .i3{
+      color:red;
+    }
+
+    .icon:hover .i4{
+      color:red;
+    }
+
+    .icon:hover .i5{
+      color: red;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="modal-header">
+      <div class="logo">JK</div> 
+      <div>|</div> 
+      <div>AwesomeChap Info</div>
+  </div>
+  <div class="modal-content">
+    <div class="modal-text">Easy access to Jatin Kumar's profiles</div>
+  </div>
+  <div class="modal-icons">
+      <a class="icon" href="http://mighty-citadel-83696.herokuapp.com" target="_blank">
+        <i class="ic i1 fa fa-globe"></i>
+      </a>
+      <a class="icon" href="https://www.youtube.com/channel/UCWOv0PVApOlYYk56d0pU57g" target="_blank">
+        <i class="ic i2 fab fa-youtube"></i>
+      </a>
+      <a class="icon" href="https://www.facebook.com/profile.php?id=100021133752064" target="_blank">
+        <i class="ic i3 fab fa-facebook"></i>
+      </a>
+      <a class="icon" href="https://www.linkedin.com/in/-jatin-kumar/" target="_blank">
+        <i class="ic i4 fab fa-linkedin-in"></i>
+      </a>
+      <a class="icon" href="https://github.com/AwesomeChap" target="_blank">
+        <i class="ic i5 fab fa-github"></i>
+      </a>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
